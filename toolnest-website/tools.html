@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tools | ToolNest</title><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="logo" href="index.html">Tool<span>Nest</span></a><nav><a href="index.html">Home</a><a class="active" href="tools.html">Tools</a><a href="weather.html">Weather</a><a href="countries.html">Countries</a><a href="about.html">About</a></nav></header>
+<main class="page"><p class="eyebrow">BROWSER TOOLS</p><h1>Free text tools</h1><p class="lead">These run locally. No account and no API key.</p>
+<div class="tool-grid">
+<section class="panel"><h2>Word & character counter</h2><textarea id="counterText" placeholder="Paste or type text here..."></textarea><div class="stats"><b id="words">0</b><span>words</span><b id="chars">0</b><span>characters</span><b id="lines">0</b><span>lines</span></div></section>
+<section class="panel"><h2>Case converter</h2><textarea id="caseText" placeholder="Enter text..."></textarea><div class="actions"><button class="btn primary" onclick="convertCase('upper')">UPPERCASE</button><button class="btn ghost" onclick="convertCase('lower')">lowercase</button><button class="btn ghost" onclick="convertCase('title')">Title Case</button></div></section>
+<section class="panel"><h2>Random quote</h2><p id="quote" class="quote">Click the button to fetch a quote from a public API.</p><button class="btn primary" onclick="getQuote()">Get quote</button><small id="quoteStatus"></small></section>
+</div></main><footer>© 2026 ToolNest · Free web utilities</footer><script src="app.js"></script></body></html>
